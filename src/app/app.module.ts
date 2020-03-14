@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import * as firebase from 'firebase/app';
 import {environment} from '../environments/environment'
-firebase.initializeApp(environment.firebaseConfig)
+firebase.initializeApp(environment.firebaseConfig);
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
