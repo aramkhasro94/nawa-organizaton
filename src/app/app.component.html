@@ -99,22 +99,20 @@
           </button>
         </div>
         <div class="modal-body">
-            <form method="post" name="Contact" netlify>
+            <form action="POST"  data-netlify="true">
                 <div class="form-group">
                   <label for="fname"> ناوی یەکەم</label>
-                  <input type="text" class="form-control" name="firstname" id="fname" placeholder="ئاکام">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="ئاکام">
 
-                  <label for="lname">ناوی دووەم</label>
-                  <input type="text" class="form-control" name="lastname" id="lname" placeholder="خسرۆ">
 
                   <label for="email">ئیمەیلەکەت</label>
-                  <input type="text" class="form-control" name="lname" id="email" placeholder="name@example.com">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
                 </div>
                 
             
                   <label for="message">نوسینی نامە</label>
                   <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-                  <input type="submit" value="submit" class="btn btn-success">
+                  <input type="submit" value="Send Message" class="btn btn-success">
               </form>
         </div>
         <div class="modal-footer">
