@@ -99,7 +99,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <form action="POST"  data-netlify="true">
+            <form name="contact" method="post" netlify>
                 <div class="form-group">
                   <label for="fname"> ناوی یەکەم</label>
                   <input type="text" class="form-control" name="name" id="name" placeholder="ئاکام">
@@ -113,7 +113,8 @@
                   <label for="message">نوسینی نامە</label>
                   <textarea class="form-control" name="message" id="message" rows="3"></textarea>
                   <input type="submit" value="Send Message" class="btn btn-success">
-              </form>
+              </form> 
+              
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">داخستن</button>
