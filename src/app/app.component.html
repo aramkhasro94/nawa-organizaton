@@ -6,7 +6,120 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<nav class="navbar navbar-expand-md navbar-light bg-light shadow-lg bg-white rounded ">
 
-<app-about></app-about>
+    <a class="navbar-brand" href="#">
+        <img class="img-nawa" src="https://scontent.febl5-2.fna.fbcdn.net/v/t1.0-1/p160x160/67247192_116056459711628_6227938213990760448_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_oc=AQk9Vk5A7zBx6aNRoP6ZQ6XOxDS4jhtafT8qcwlUFykY-FD7s1zonxY63gnt-Tpv9aY&_nc_ht=scontent.febl5-2.fna&_nc_tp=6&oh=e4698840a27fea839517865ff38e0bdb&oe=5EFE2A50" width="30" height="30" alt="">
+      NAWA Organaization
+      <span class="span-res">تۆری نەوا بۆ رێکخراوە مەدەنیەکان</span>
+    </a>   
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-i">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse div-style" id="navbar-i">
+    <ul class="navbar-nav ml-auto ul-responsive">
+        <li class="nav-item nav-item-res">
+            <a href="#" class="nav-link">وتارەکان</a>
+        </li>
+        <li class="nav-item nav-item-res">
+            <a href="#" class="nav-link" routerLink="/definition">
+               دەربارەی تۆرەکە 
+            </a>
+        </li>
+        <li class="nav-item nav-item-res">
+            <a href="#" class="nav-link" routerLink="/activity">چالاکیەکان</a>
+        </li>
+        <li class="nav-item nav-item-res border-res ">
+            <a href="#" class="nav-link text-danger border-res-a border-res-a-danger"  data-toggle="modal" data-target="#exampleModal">پەیوەندی</a>
+        </li>
+    </ul>
+</div>
 
+</nav>
+
+    
+    
+
+<!-- <app-about></app-about> -->
 <router-outlet></router-outlet>
+
+
+<footer class="section footer-classic context-dark bg-image" style= background-image:linear-gradient(#4b6cb7,#182848);
+>
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-md-4 col-xl-5">
+        <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="https://scontent.febl5-2.fna.fbcdn.net/v/t1.0-1/p160x160/67247192_116056459711628_6227938213990760448_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_oc=AQk9Vk5A7zBx6aNRoP6ZQ6XOxDS4jhtafT8qcwlUFykY-FD7s1zonxY63gnt-Tpv9aY&_nc_ht=scontent.febl5-2.fna&_nc_tp=6&oh=e4698840a27fea839517865ff38e0bdb&oe=5EFE2A50" alt="" width="50" height="50"></a>
+          <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+          <!-- Rights-->
+          <p class="rights"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>Nawa organization</span><span>. </span><span>All Rights Reserved.</span></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5>Contacts</h5>
+     
+        <dl class="contact-list">
+          <dt>email:</dt>
+          <dd><a href="mailto:#">torenawa@gmail.com</a></dd>
+        </dl>
+        <dl class="contact-list">
+          <dt>facebook:</dt>
+          <dd><a href="mailto:#">Tore Nawa</a></dd>
+        </dl>
+        <dl class="contact-list">
+          <dt>phones:</dt>
+          <dd><a href="tel:#">+9647508492024</a> 
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-4 col-xl-3">
+        
+        <ul class="nav-list">
+          <li class="li-resp"><a href="#">About</a></li>
+          <li class="li-resp"><a href="#">Event</a></li>
+          <li class="li-resp"><a href="#">Activity</a></li>
+          <li class="li-resp"><a href="#">Contacts</a></li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center headofnawa" id="exampleModalLabel">چۆنیەتی بەشداری کردن لە تۆری نەوا</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form method="post" name="Contact" netlify>
+                <div class="form-group">
+                  <label for="fname"> ناوی یەکەم</label>
+                  <input type="text" class="form-control" name="firstname" id="fname" placeholder="ئاکام">
+
+                  <label for="lname">ناوی دووەم</label>
+                  <input type="text" class="form-control" name="lastname" id="lname" placeholder="خسرۆ">
+
+                  <label for="email">ئیمەیلەکەت</label>
+                  <input type="text" class="form-control" name="lname" id="email" placeholder="name@example.com">
+                </div>
+                
+            
+                  <label for="message">نوسینی نامە</label>
+                  <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                  <input type="submit" value="submit" class="btn btn-success">
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">داخستن</button>
+        </div>
+      </div>
+    </div>
+  </div>
