@@ -7,7 +7,7 @@ import { ActivityComponent } from './activity/activity.component';
 const routes: Routes = [
   {path:'definition',component:DefinitionComponent},
   {path:'activity',component:ActivityComponent},
-  {path:'',redirectTo:'/activity',pathMatch:'full'}
+  // {path:'',redirectTo:'/activity',pathMatch:'full'}
 
 
 ];
